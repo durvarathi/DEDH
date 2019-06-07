@@ -11,4 +11,4 @@ spec:
    image: tomcat
    ports:
    - name: siteport
-     containerPort: 3000
+     containerPort: 8080
