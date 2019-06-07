@@ -12,4 +12,3 @@ spec:
    ports:
    - name: siteport
      containerPort: 3000
-     
