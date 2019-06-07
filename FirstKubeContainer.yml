@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
- name: Durva.test.com
+ name: durva.test.com
  labels:
   app: firstapp
 spec: 
@@ -12,3 +12,4 @@ spec:
    ports:
    - name: siteport
      containerPort: 3000
+     
