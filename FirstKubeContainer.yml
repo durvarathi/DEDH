@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+ name: Durva.test.com
+ labels:
+  app: firstapp
+spec: 
+ containers:
+ - name: firstapp
+   image: tomcat
+   ports:
+   - name: siteport
+     containerPort: 3000
