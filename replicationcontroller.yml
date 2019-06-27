@@ -1,0 +1,20 @@
+---
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: durva-test-Controller
+spec:
+  replicas: 2
+  selector:
+    app: firstapp
+  template:
+    metadata:
+      labels:
+        app: firstapp
+    spec:
+     containers:
+     - name: firstapp
+     image: durvagen/kubernetes:firstapp
+     ports:
+     - name: durvatest
+       containerPort: 8080
