@@ -6,15 +6,15 @@ metadata:
 spec:
   replicas: 2
   selector:
-    app: firstapp
+    app: replica
   template:
     metadata:
       labels:
-        app: firstapp
+        app: replica
     spec:
      containers:
-     - name: firstapp
-     image: durvagen/kubernetes:firstapp
+     - name: replicationapp
+     image: tomcat
      ports:
      - name: durvatest
        containerPort: 8080
